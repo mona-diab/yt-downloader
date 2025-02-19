@@ -46,3 +46,27 @@ Task3: Create the containerized application
   
 ![Ubuntu (2)-2025-02-16-00-21-40](https://github.com/user-attachments/assets/37c9321d-3613-4f7f-bb36-77ba87caff46)
 ![Ubuntu (2)-2025-02-16-00-23-48](https://github.com/user-attachments/assets/559b4ada-101e-472d-bb6f-413697b6b80b)
+
+
+Week 2: Jenkins & CI Integration
+
+Task1: Create Jenkins Jobs: Configure Jenkins to build the Dockerized application.
+
+       Configure 2 piplines for build docker image and run docker container
+
+![Ubuntu (2)-2025-02-18-06-25-00](https://github.com/user-attachments/assets/4c2776f7-c295-4b02-9724-0b6cbfa6c4ef)
+![Ubuntu (2)-2025-02-18-06-25-17](https://github.com/user-attachments/assets/174e2f59-dfe1-4f69-8348-d22655a16cf7)
+.![Ubuntu (2)-2025-02-18-06-12-08](https://github.com/user-attachments/assets/08f4942b-bbef-4098-87e6-fed559c954d1)
+![Ubuntu (2)-2025-02-19-06-17-18](https://github.com/user-attachments/assets/65136f25-a3ff-40c3-85ff-8eb477291490)
+![Ubuntu (2)-2025-02-19-05-30-13](https://github.com/user-attachments/assets/32296b7e-3762-4e92-b19d-6d34cf631368)
+![Ubuntu (2)-2025-02-19-05-31-36](https://github.com/user-attachments/assets/c18ea665-f281-4b6e-b584-168f3285aed3)
+![Ubuntu (2)-2025-02-19-05-32-48](https://github.com/user-attachments/assets/4513f77f-2158-4835-88e1-1ebdbfc96c1e)
+
+- checking image & container
+![2](https://github.com/user-attachments/assets/54414ec0-9054-40de-965b-0382320c2935)
+![Ubuntu (2)-2025-02-19-06-19-41](https://github.com/user-attachments/assets/aa280390-cf4f-4065-b024-8dc7436e2b2f)
+
+- Browsing the application
+  ![Ubuntu (2)-2025-02-19-06-20-05](https://github.com/user-attachments/assets/076d36a2-66f0-47c8-a30f-c22013907afb)
+
+
