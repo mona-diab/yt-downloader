@@ -52,7 +52,7 @@ Week 2: Jenkins & CI Integration
 
 Task1: Create Jenkins Jobs: Configure Jenkins to build the Dockerized application.
 
-       Configure 2 piplines for build docker image and run docker container
+ - Configure 2 piplines for build docker image and run docker container
 
 ![Ubuntu (2)-2025-02-18-06-25-00](https://github.com/user-attachments/assets/4c2776f7-c295-4b02-9724-0b6cbfa6c4ef)
 ![Ubuntu (2)-2025-02-18-06-25-17](https://github.com/user-attachments/assets/174e2f59-dfe1-4f69-8348-d22655a16cf7)
