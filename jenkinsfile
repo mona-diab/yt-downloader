@@ -1,0 +1,54 @@
+pipeline {
+    agent any
+    
+   environment {
+        DOCKER_IMAGE = 'mona/yt-downloader'  
+   }
+    stages {
+        stage('Checkout from GitHub') {
+            stage('Checkout from GitHub') {
+    steps {
+        git credentialsId: 'github_credentials_id', url: 'https://github.com/mona-diab/yt-downloader.git', branch: 'main'
+    }
+}
+
+            }
+        }
+        stage('Docker Login') {
+            steps {
+                withCredentials([usernamePassword(credentialsId: 'docker_credentials_id', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
+                    sh 'echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin'
+                }
+            }
+        }
+        
+        stage('Run Tests') {
+    steps {
+        sh 'pytest tests/'  
+    }
+}
+
+        stage('Build Docker Image') {
+            steps {
+                script {
+                    sh "docker build -t youtube-downloader ."
+                }
+            }
+        }
+
+    stage('Push to Docker Hub') {
+            steps {
+                script {
+                    docker.withRegistry('https://index.docker.io/v1/', 'docker-hub-credentials') {
+                        dockerImage.push("latest")
+                    }
+                }
+            }
+        }
+
+    post {
+        success {
+            build job: 'Run Docker Container', wait: false  
+        }
+    }
+    }
