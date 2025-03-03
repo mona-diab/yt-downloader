@@ -1,0 +1,52 @@
+- name: Deploy YouTube Downloader Application on Ubuntu 24.04
+  hosts: all
+  become: yes
+  tasks:
+     - name: Update and install dependencies
+      apt:
+        update_cache: yes
+        name:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - software-properties-common
+        state: present
+   - name: Add Docker GPG Key
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        state: present
+
+    - name: Add Docker Repository
+      apt_repository:
+        repo: deb https://download.docker.com/linux/ubuntu focal stable
+        state: present
+
+    - name: Install Docker
+      apt:
+        name: docker-ce
+        state: present
+
+    - name: Ensure Docker service is running
+      service:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Pull Docker Image
+      docker_image:
+        name: mona248/yt-downloader
+        source: pull
+
+    - name: Stop and remove existing container
+      docker_container:
+        name: yt-downloader
+        state: absent
+
+    - name: Run YouTube Downloader Container
+      docker_container:
+        name: yt-downloader
+        image: mona248/yt-downloader
+        state: started
+        restart_policy: always
+        ports:
+          - "5000:5000"
