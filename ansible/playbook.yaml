@@ -2,51 +2,26 @@
   hosts: all
   become: yes
   tasks:
-     - name: Update and install dependencies
-      apt:
-        update_cache: yes
-        name:
-          - apt-transport-https
-          - ca-certificates
-          - curl
-          - software-properties-common
-        state: present
-   - name: Add Docker GPG Key
-      apt_key:
-        url: https://download.docker.com/linux/ubuntu/gpg
-        state: present
+      - name: Check if KIND is installed
+      shell: test -x /usr/local/bin/kind
+      register: kind_installed
+      ignore_errors: yes
 
-    - name: Add Docker Repository
-      apt_repository:
-        repo: deb https://download.docker.com/linux/ubuntu focal stable
-        state: present
+    - name: Ensure KIND is installed
+      fail:
+        msg: "KIND is not installed! Please install it or add it to the PATH."
+      when: kind_installed.rc != 0
 
-    - name: Install Docker
-      apt:
-        name: docker-ce
-        state: present
+    - name: Check if Kubernetes cluster exists
+      shell: /usr/local/bin/kind get clusters | grep -w youtube-cluster
+      register: cluster_exists
+      ignore_errors: yes
 
-    - name: Ensure Docker service is running
-      service:
-        name: docker
-        state: started
-        enabled: yes
+    - name: Create Kubernetes cluster (if not exists)
+      command: /usr/local/bin/kind create cluster --name youtube-cluster
+      when: cluster_exists.rc != 0
 
-    - name: Pull Docker Image
-      docker_image:
-        name: mona248/yt-downloader
-        source: pull
 
-    - name: Stop and remove existing container
-      docker_container:
-        name: yt-downloader
-        state: absent
 
-    - name: Run YouTube Downloader Container
-      docker_container:
-        name: yt-downloader
-        image: mona248/yt-downloader
-        state: started
-        restart_policy: always
-        ports:
-          - "5000:5000"
+    - name: Apply Kubernetes Manifests
+      shell: /usr/local/bin/kubectl apply -f deployment.yaml -f service.yaml 
