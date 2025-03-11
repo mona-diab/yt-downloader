@@ -57,7 +57,10 @@ Task1: Create Jenkins Jobs: Configure Jenkins to build the Dockerized applicatio
 ![Ubuntu (2)-2025-02-18-06-25-00](https://github.com/user-attachments/assets/4c2776f7-c295-4b02-9724-0b6cbfa6c4ef)
 ![Ubuntu (2)-2025-03-07-05-46-34](https://github.com/user-attachments/assets/67e91ef8-9a34-4720-a11c-e1c0d8b3fea0)
 .![Ubuntu (2)-2025-02-18-06-12-08](https://github.com/user-attachments/assets/08f4942b-bbef-4098-87e6-fed559c954d1)
-![Ubuntu (2)-2025-03-07-05-45-11](https://github.com/user-attachments/assets/66b95c16-ef81-44cd-8c8e-f0c23b71704a)
+![Ubuntu (2)-2025-03-11-22-21-19](https://github.com/user-attachments/assets/02961591-9f24-4aad-8bc5-9fe3406a4c3d)
+
+![Ubuntu (2)-2025-03-11-22-17-50](https://github.com/user-attachments/assets/f0fe542d-405c-435f-86fd-bda6b3aef882)
+
 ![Ubuntu (2)-2025-02-19-05-30-13](https://github.com/user-attachments/assets/32296b7e-3762-4e92-b19d-6d34cf631368)
 
 - checking image & container
