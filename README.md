@@ -72,6 +72,8 @@ Task1: Create Jenkins Jobs: Configure Jenkins to build the Dockerized applicatio
     deployment of Docker containers.
     
     ![Ubuntu (2)-2025-03-07-05-04-28](https://github.com/user-attachments/assets/8df7a61f-a15b-4f64-bee2-f9e65e25a25a)
+    ![ci_cd Plpeline - Youtube downloader drawio(2)](https://github.com/user-attachments/assets/869fb94a-2bd4-4585-93ae-0d0c12c2a8e9)
+
 
     
 
