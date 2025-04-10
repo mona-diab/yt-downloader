@@ -56,18 +56,20 @@ Task1: Create Jenkins Jobs: Configure Jenkins to build the Dockerized applicatio
  - Configure 2 piplines for build docker image and run docker container
 
 ![Ubuntu (2)-2025-02-18-06-25-00](https://github.com/user-attachments/assets/4c2776f7-c295-4b02-9724-0b6cbfa6c4ef)
-![Ubuntu (2)-2025-03-07-05-46-34](https://github.com/user-attachments/assets/67e91ef8-9a34-4720-a11c-e1c0d8b3fea0)
-.![Ubuntu (2)-2025-02-18-06-12-08](https://github.com/user-attachments/assets/08f4942b-bbef-4098-87e6-fed559c954d1)
-![Ubuntu (2)-2025-03-11-22-21-19](https://github.com/user-attachments/assets/02961591-9f24-4aad-8bc5-9fe3406a4c3d)
+![Ubuntu (2)-2025-04-10-20-06-12](https://github.com/user-attachments/assets/37a90d78-373c-433d-b501-16e1135c6b6c)
 
-![Ubuntu (2)-2025-03-11-22-17-50](https://github.com/user-attachments/assets/f0fe542d-405c-435f-86fd-bda6b3aef882)
+.![Ubuntu (2)-2025-02-18-06-12-08](https://github.com/user-attachments/assets/08f4942b-bbef-4098-87e6-fed559c954d1)
+![Ubuntu (2)-2025-04-10-20-07-43](https://github.com/user-attachments/assets/2ccc6637-a65a-4d05-b6f8-ac8ae1d1e68d)
+![Ubuntu (2)-2025-04-10-20-08-09](https://github.com/user-attachments/assets/17b90f4c-20a2-4d5b-b315-1c608c20f211)
+
 
 ![Ubuntu (2)-2025-02-19-05-30-13](https://github.com/user-attachments/assets/32296b7e-3762-4e92-b19d-6d34cf631368)
 
 - checking image & container
 ![2](https://github.com/user-attachments/assets/54414ec0-9054-40de-965b-0382320c2935)
 ![Ubuntu (2)-2025-02-19-06-19-41](https://github.com/user-attachments/assets/aa280390-cf4f-4065-b024-8dc7436e2b2f)
-![Ubuntu (2)-2025-03-05-05-34-11](https://github.com/user-attachments/assets/f0db1c62-dd7c-45d8-83e5-530a9487437f)
+![image](https://github.com/user-attachments/assets/56ee0b5f-2ac8-4605-9000-673dadb383b0)
+
 
 - Browsing the application
   ![Ubuntu (2)-2025-02-19-06-20-05](https://github.com/user-attachments/assets/076d36a2-66f0-47c8-a30f-c22013907afb)
